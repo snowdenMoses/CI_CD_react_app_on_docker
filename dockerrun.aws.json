@@ -1,13 +1,11 @@
 {
   "AWSEBDockerrunVersion": "1",
-  "Image": {
-    "Name": "snowdenmoses/react_app_on_docker:latest",
-    "Update": "true"
-  },
-  "Ports": [
+  "containerDefinitions": [
     {
-      "ContainerPort": "3000"
+        "name": "react-app",
+        "image": ":snowdenmoses/react_app_on_docker",
+        "essential": true,
+        "memory": 128
     }
-  ],
-  "Logging": "/var/log/nginx"
+    ]
 }
