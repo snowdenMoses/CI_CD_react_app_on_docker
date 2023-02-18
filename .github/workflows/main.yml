@@ -32,6 +32,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: Demo 5
         environment_name: Demo5-env
-        version_label: "demo7-${{ steps.format-time.outputs.replaced }}"
+        version_label: "demo8-${{ steps.format-time.outputs.replaced }}"
         region: us-east-1
         deployment_package: deploy.zip
